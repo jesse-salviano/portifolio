@@ -23,29 +23,31 @@ body {
 header {
     width: 100%;
     height: 60px;
-    position: absolute;
-
-    padding: 0 160px;
+    position: fixed;
+    padding: 5%;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
 
-    background-color: transparent;
+    background: linear-gradient(rgba(0,0,0,.5) 50%, rgba(0,0,0,0) 100%);
     color: white;
+
+    z-index: 999;
 }
 
-header h1{
+header h1 {
     color: white;
     font-weight: 900;
+    padding: 5px;
+    transition: .5s;
+    border-radius: 40px;
 }
 
 .navbar {
-
     width: 400px;
     height: 100%;
-
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -55,15 +57,15 @@ header h1{
 
 }
 
-.navbar a{
+.navbar a {
     color: #f7f7f7;
     background-color: transparent;
     transition: .5s;
     font-weight: 600;
 }
 
-.navbar a:hover{
-    color: #084d6e;
+.navbar a:hover, header h1:hover {
+    color: var(--azul-pet);
     background-color: white;
     padding: 10px;
     border-radius: 40px;
@@ -75,23 +77,53 @@ header h1{
 }
 
 main {
-    display: flex;
+
     width: 100%;
     min-height: 105vh;
-    padding-top: 180px;
-    background:  
-                linear-gradient(170deg, var(--azul-pet) 10%, rgba(0, 0, 0, 0)30%, rgba(0, 0, 0, 0) 100%), 
-                linear-gradient(0deg, var(--azul-pet) 5%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 100%), 
-                linear-gradient(70deg, var(--azul-pet) 5%, rgba(0, 0, 0, 0)30%, rgba(0, 0, 0, 0) 100%),
-                url(assets/galaxy.jpg);
+
+    background:
+        linear-gradient(170deg, var(--azul-pet) 10%, rgba(0, 0, 0, 0)30%, rgba(0, 0, 0, 0) 100%),
+        linear-gradient(0deg, var(--azul-pet) 5%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 100%),
+        linear-gradient(70deg, var(--azul-pet) 5%, rgba(0, 0, 0, 0)30%, rgba(0, 0, 0, 0) 100%),
+        url(assets/galaxy.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
     box-shadow: inset 0 -200px 100px var(--azul-pet);
+
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+
+main .numeracao {
+
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 150px;
+
+}
+
+h1.num {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    outline: solid white 4px;
 }
 
 .apresentation {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.596);
     color: #303030;
 
     border: none;
@@ -99,12 +131,23 @@ main {
     border-top-left-radius: 0;
 
     width: 600px;
+    max-width: 80%;
+    min-width: 20%;
     min-height: 500px;
 
-    margin: 60px 200px auto 200px    ;
-    padding: 40px;
+    margin: auto auto auto auto;
+    padding-left: 60px;
+    padding-top: 60px;
+    padding-right: 60px;
 
     text-align: justify;
+
+
+    transition: .5s;
+}
+
+.apresentation:hover {
+    background-color: white;
 }
 
 
@@ -125,23 +168,19 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top 0% left 50%;
-
-    border-radius: 40px;
-    border-top-right-radius: 0;
-
+    border-radius: 100px;
     position: absolute;
-    left: 120px;
-    margin-top: 60px;
+    margin: -90px auto auto -80px;
     transition: .5s;
 }
 
-.photo-box:hover{
+.photo-box:hover {
     transition: .5s;
     height: 200px;
     width: 100px;
 }
 
-.cases{
+.cases {
 
     width: 90%;
     min-height: 600px;
@@ -149,11 +188,22 @@ main {
     padding: 50px;
     margin: 0;
     color: #303030;
-    background-color:rgb(243, 243, 243);
-    border-radius:  40px;   
+    border-radius: 40px;
+    transition: .5s;
+}
+
+
+.white-pane {
+    transition: .5s;
+    border-radius: 40px;
 
 }
 
-:root{
+.white-pane:hover {
+    background-color: white;
+    color: #303030;
+}
+
+:root {
     --azul-pet: #00141d;
 }
