@@ -25,7 +25,11 @@
     </header>
 
     <main>
-        <section class="apresentation">
+        <section class="apresentation white-pane">
+
+
+            <div class="photo-box">
+            </div>
 
             <h3>Quem sou eu? <i class='bx bxs-leaf'></i></h3>
             <h2>Jessé Salviano</h2>
@@ -36,24 +40,32 @@
             <p>Durante a minha carreira, tenho produzido designs para diversas interfaces web usando <strong> HTML, CSS, JavaScript e PHP</strong>.</p>
             <br>
             <p> Em meus trabalhos, busco dar foco à fluidez e boa aparência do site para dar a melhor experiência ao usuário final.</p>
-            <br> 
+            <br>
             <br><br>
-            <a href="#cases" class="nodecoration"><p><strong>Veja alguns exemplos abaixo...</strong></p></a>
+            <a href="#cases" class="nodecoration">
+                <p><strong>Veja alguns exemplos abaixo...</strong></p>
+            </a>
+            <br>
 
         </section>
 
-        <div class="photo-box">
 
+        <div class="numeracao ">
+            <h1 class="num "><i class='bx bx-ghost'></i></h1>
         </div>
-
     </main>
 
 
-    <section class="cases" id="cases">
+    <section class="cases white-pane" id="cases">
 
-    <h1>Trabalhos</h1>
+        <h1>Trabalhos</h1>
 
     </section>
+
+    <footer class="white-pane"> 
+
+
+    </footer>
 
 </body>
 
