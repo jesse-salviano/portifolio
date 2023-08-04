@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: var(--azul-pet);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+
+    padding: 0 160px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    background-color: transparent;
+    color: white;
+}
+
+header h1{
+    color: white;
+    font-weight: 900;
+}
+
+.navbar {
+
+    width: 400px;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin: 0 20px;
+
+
+}
+
+.navbar a{
+    color: #f7f7f7;
+    background-color: transparent;
+    transition: .5s;
+    font-weight: 600;
+}
+
+.navbar a:hover{
+    color: #084d6e;
+    background-color: white;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.nodecoration {
+
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    min-height: 105vh;
+    padding-top: 180px;
+    background:  
+                linear-gradient(170deg, var(--azul-pet) 10%, rgba(0, 0, 0, 0)30%, rgba(0, 0, 0, 0) 100%), 
+                linear-gradient(0deg, var(--azul-pet) 5%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 100%), 
+                linear-gradient(70deg, var(--azul-pet) 5%, rgba(0, 0, 0, 0)30%, rgba(0, 0, 0, 0) 100%),
+                url(assets/galaxy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    box-shadow: inset 0 -200px 100px var(--azul-pet);
+}
+
+.apresentation {
+    background-color: white;
+    color: #303030;
+
+    border: none;
+    border-radius: 40px;
+    border-top-left-radius: 0;
+
+    width: 600px;
+    min-height: 500px;
+
+    margin: 60px 200px auto 200px    ;
+    padding: 40px;
+
+    text-align: justify;
+}
+
+
+.apresentation h3 {
+    color: var(--azul-pet);
+}
+
+.apresentation a {
+    color: var(--azul-pet);
+}
+
+.photo-box {
+    padding: 40px;
+    height: 100px;
+    width: 100px;
+
+    background-image: url("assets/foto-jesse-salviano.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 0% left 50%;
+
+    border-radius: 40px;
+    border-top-right-radius: 0;
+
+    position: absolute;
+    left: 120px;
+    margin-top: 60px;
+    transition: .5s;
+}
+
+.photo-box:hover{
+    transition: .5s;
+    height: 200px;
+    width: 100px;
+}
+
+.cases{
+
+    width: 90%;
+    min-height: 600px;
+    display: flex;
+    padding: 50px;
+    margin: 0;
+    color: #303030;
+    background-color:rgb(243, 243, 243);
+    border-radius:  40px;   
+
+}
+
+:root{
+    --azul-pet: #00141d;
+}
